@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan ke 3 - Formatting & Table</title>
+    
+    <style>
+        /*Ini adalah komentar di CSS,
+        Kenapa beda? karena css mempunyai formatnya sendiri
+        dan jika dimasukkan format komentar html,
+        maka komentar tidak dapat dibuat/error*/
+
+        /*membuat Border di CSS.
+        Jika di html bisa juga namun bakal berwarna
+        merah dikarenakan sudah usang atau expired
+        */
+        body {
+            background-image: url(img/bw-grunge-texture-4.png);
+        }
+
+        table {
+            border: 2px solid green;
+        }
+        
+        th {
+            border: 2px solid blue;
+        }
+
+        td {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Heading 1-->
+    <h1>Pertemuan Kursus ke 3</h1>
+    <!--Paragraph-->
+    <p>
+        <!--
+            Formattig text
+        -->
+        <!--Format Strong-->
+        <strong>strong - Lorem ipsum dolor sit,</strong>  <br>
+        <!--Format Bold-->
+        <b>b - amet consectetur adipisicing elit.</b>  <br>
+        <!--Format italic-->
+        <i>i- Sequi voluptas nulla eos soluta quidem,</i> <br>
+        <!--Format emphasys-->
+        <em>em - rerum delectus distinctio modi magnam sapiente</em> <br>
+        <!--Format Mark-->
+        <mark>mark -quibusdam fuga dolore</mark> <br>
+        <!--Format Del-->
+        <del>del - in voluptatum</del> <br>
+        <!--Format ins-->
+        <ins> ins - voluptate?</ins> <br>
+        <!--Format i + ins-->
+        <i><ins>i + ins - Quia eos</ins></i> <br>
+        <!--Format sub-->
+        ini sub<sub>odio</sub>  <br>
+        <!--Format sup-->
+        ini sup<sup>illo!</sup> <br>
+        <!--Format sup dalam perhitungan-->
+        72 + 4<sup>2</sup> = 88 <br>
+        <!--Format &frac untuk pangkat-->
+        12&frac12; <br>
+        <!--Format sup+sub menghasilkan pangkat pecahan-->
+        12<sup>12/<sub>100</sub></sup> <br>
+        <!--Format sup+sub dengan posisi yang berbeda-->
+        12<sup>12</sup>/<sub>100</sub>
+    </p>
+
+    <!--Tabel
+        Element utama yang harus ada untuk membuat tabel.
+        Jika tidak ada, maka tabel tidak dapat dibuat dan
+        hanya menampilkan teks walupun terdapat th dan td.
+    -->
+    <table>
+        <!--Tabel Heading
+        di dalam tabel heading maupun tabel row,
+        terdapat tabel data yang membuat blok"
+        tabel berdasarkan baris dan kolom.
+        -->
+        <th>
+            <!--Tabel Utama-->
+            Jam/Hari
+            <!--Tabel Data-->
+            <td>Senin</td>
+            <td >Selasa</td>
+            <td>Rabu</td>
+            <td>Kamis</td>
+            <td>Jumat</td>
+        </th>
+        <!--Tabel Row-->
+        <tr>
+            <td>07:30 - 09:15</td>
+            <td rowspan="3">PSK</td>
+            <!--Atribut rowspan
+            digunakan untuk menggabungkan 2
+            atau lebih baris dengan ketentuan
+            rowspan="jumlah baris yang ingin digabung" -->
+            <td> - </td>
+        </tr>
+        <tr>
+            <td >10:15 - 11:45</td>
+            <td colspan="2">Logpro</td>
+            <!--Atribut colspan
+            digunakan untuk menggabungkan  2
+            atau lebih kolom dengan ketentuan
+            colspan="jumlah kolom yang ingin digabung" -->
+        </tr>
+        <tr>
+            <td>13:30 - 15:00</td>
+            <td>Kalkulus</td>
+        </tr>
+        <!-- Note :
+            dalam menggabung baris ataupun kolom,
+            tabel yang dibuat setelahnya tidak akan hilang
+            melainkan akan berpindah ke baris atau kolom berikutnya
+        -->
+    </table>
+    bit.ly/HTMLCSSKe3
+
+</body>
+
+</html>

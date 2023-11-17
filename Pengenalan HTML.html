@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengenalan HTML</title>
+    <style>
+        
+        /*Note : untuk membuat komentar kosong, tekan ctrl+/.
+        Untuk menjadikan komentar/menyembunyikan kode tertentu,
+        blok kodenya dan tekan ctrl+/.*/
+
+        /*Tetapi cara diatas tidak berlaku jika melakukannya disini "<style>",
+        karena cara diatas otomatis akan menggunakan format komentar html,
+        sedangkan pada "<style>" format komentar yang digunakan adalah CSS.*/
+        
+        /*Solusinya
+        gunakan */ /**/ /*format komentar CSS kosong disamping,
+        bisa diketik atau copy dan paste lalu pindahkan
+        kode yang ingin disembunyikan/dikomentar*/
+
+        /*
+        Format Komentar HTML : <!--  -->
+        Format Komentar CSS  : /* */
+
+
+        body {
+            /*Membuat Background dengan Warna Dasar*/
+            background-color: aliceblue;
+            
+            /*Membuat Background dengan Gradasi
+            dengan ketentuan*/
+            background: linear-gradient(
+                to top, lightblue, rgb(255, 255, 255)
+            );
+
+            /*Membuat Background dengan Gambar*/
+            background-image:url(img/bw-grunge-texture-4.png);
+            /*Background repeat untuk mengatur gambar bisa diulang atau tidak*/
+            background-repeat:repeat-y;
+            /*background size mengatur ukuran dengan ketentuan
+            background-size: width height*/
+            background-size: 100% 100%;
+            
+        }
+        .bgc {
+            background:
+                    linear-gradient(
+                        to bottom,
+                        rgb(238, 236, 195),
+                        rgb(176, 241, 195)
+                        )
+        }
+
+        /*Note :
+        background yang ditampilkan hanya yang paling bawah
+        karena kode yang sama bakal diubah dan ditetapkan di baris terakhir.
+        Hal ini kemungkinan bakal berlaku di semua element.*/
+    </style>
+</head>
+
+<body>
+    <!-- bagian div : paling atas -->
+    <div>
+        <!--Heading 1 hingga 6
+            adalah Judul teks yang menjadi
+            inti dari seluruh konsep.-->
+        <h1>Heading</h1>
+
+        <!-- Heading 1 -->
+        <h1>ini adalah Judul h1</h1>
+        
+        <!-- Heading yang beda penutup.
+            Heading akan tetap ditampilkan.
+            Tapi, format heading yang ditampilkan
+            berdasarkan element pembuka/awal-->
+        <h2>ini adalah Judul - h2 -<br>
+            <!-- br untuk enter -->
+            yang beda penutup - h1 -</h1>
+            
+        <!-- Heading 2 -->
+        <h2>ini adalah Judul h2</h2>
+        
+        <!-- Heading 3 -->
+        <h3>ini adalah Judul h3</h3>
+        
+        <!-- Heading 4 -->
+        <h4>ini adalah Judul h4</h4>
+        
+        <!-- Heading 5 -->
+        <h5>ini adalah Judul h5</h5>
+        
+        <!-- Heading 6 -->
+        <h6>ini adalah Judul h6</h6>
+
+        <!--Paragraf
+            berisi teks yang menyampaikan penjelasan
+            terkait judul ataupun kumpulan teks yang
+            berupa deskripsi.-->
+        <p style="font-size:25px; text-align:center;">
+            ini merupakan teks
+            <!--Span
+                untuk membantu mengubah tampilan beberapa
+                kata/kalimat dalam kalimat/paragraf tertentu -->
+            <span style="color: rgb(28, 116, 138); font-family:fantasy; ">
+                yang ada didalam span.
+            </span>
+            </p>
+            <!-- &emsp, dll
+                untuk membuat jarak spasi pada teks-->
+        <p> &emsp; &emsp; Ini teks yang diberi jarak.
+            <!-- br
+                untuk membuat baris baru pada teks/enter-->
+            <br>
+            dan enter.
+            <!-- a
+            atau hypertextlink merupakan teks yang ketika diklik
+            bisa mengarahkan ke alamat/halaman lain.
+
+            href
+            adalah atribut yang menjadi sumber
+            tautan yang akan dituju ketika teks diklik.
+        -->
+        <a href="https://www.google.com">Google</a>
+
+        <!-- div
+            merupakan pengelompokkan pada html untuk
+            membantu membuat tampilan lebih flexibel.-->
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aperiam neque, voluptates voluptate
+                eligendi iste! Exercitationem asperiores nemo, possimus facere, pororo suscipit, debitis odio ullam
+                maiores provident eius recusandae enim.</p>
+        </div>
+    </div>
+    <!-- bagian div 2-->
+    <div>
+        <!--Text-align
+            Posisi text menggunakan CSS.
+            Dengan ketentuan :
+            style="text-align:posisi yang diinginkan" -->
+        <p style="text-align:left;">ini text dengan posisi ke kiri</p>
+        <!-- memuat paragraf dengan posisi teks ke tengah. -->
+        <p style="text-align:center;">ini text degan posisi ke tengah</p>
+        <!-- memuat paragraf dengan posisi teks ke kanan. -->
+        <p style="text-align:right;">ini text dengan posisi di kanan</p>
+    </div>
+    <!-- teks tambahan dengan background berwarna-->
+    <div class="bgc">
+        <p>Ini adalah teks dengan Background color</p>
+    </div>
+
+    <div>
+        <img src="img/download.jpg" alt="
+            ini alt" width="100%" height="100%">
+        <p>ini adalah paragraf</p>
+    </div>
+
+
+
+</body>
+bit.ly/KursusBatch2
+
+</html>
